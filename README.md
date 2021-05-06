@@ -1,4 +1,4 @@
 # A-star-Pathfinding
+This task was assigned to me as part of the selection process for the Autonomous Ground Vehicle Research Group software team at IIT Kharagpur.
+The task involves a total of six parts.
 
-## Agv - Task1
-I was given this task as a part of the software team task round in the selection process of Autonomous Ground Vehicle Research Group at IIT Kharagpur
