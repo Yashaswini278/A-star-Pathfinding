@@ -37,7 +37,7 @@ an image depending on a given scale factor. A nice picture which illusrates this
 
 ## Scope for improvement
 
-### 1.Inability to show contrasting result for non-admissible heuristic
+### 1. Inability to show contrasting result for non-admissible heuristic
 A better non-admissible heuristic could be selected to improve on highlighting the difference in outcomes between admissible heuristic and non-admissible heuristic.
 ### 2. Code compactness
 A more compact method of representing the image as a grid could be explored.
