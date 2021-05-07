@@ -3,9 +3,9 @@ This task was assigned to me as part of the selection process for the Autonomous
 The task involves a total of six parts.
 
 ## Key Learnings
-<p> 1. Impact of different heuristic functions of A-star search on path cost and time </p>
+<p> 1. Effect of different heuristic functions of A-star search on path cost and time </p>
 <p> 2. Using Priority Queue in Python </p>
-<p> 3. Image scaling using Nearest neighbour interpolation </p>
+<p> 3. Image scaling using Nearest Neighbour Interpolation </p>
 <p> 4. OpenCV: opening, closing and saving images, drawing lines on images, extracting b, g, r channels </p>
 <p> 5. Numpy: n-dimensional arrays creating </p>
 
