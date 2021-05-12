@@ -4,7 +4,7 @@ The task involves a total of six parts.
 
 ## Key Learnings
 <p> 1. Effect of different heuristic functions of A-star search on path cost and time </p>
-<p> 2. Using Priority Queue in Python </p>
+<p> 2. Using heapq library in Python to implement a "min-heap"</p>
 <p> 3. Image scaling using Nearest Neighbour Interpolation </p>
 <p> 4. OpenCV: opening, closing and saving images, drawing lines on images, extracting b, g, r channels </p>
 <p> 5. Numpy: creating n-dimensional arrays </p>
