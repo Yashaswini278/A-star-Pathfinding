@@ -1,10 +1,10 @@
-# A-star-Pathfinding
-This task was assigned to me as part of the selection process for the Autonomous Ground Vehicle Research Group software team at IIT Kharagpur.
-The task involves a total of six parts.
+# A* Pathfinding
+This objective of this project was to implement the A* algorithm for finding the optimum path, given the RGB vaues of the start point, end point and obstacles.
+The project involved exploring the Dijkstra's algorithm and different heuristics for the A* search to compare the path costs and the total time taken to reach the end point. The Manhattan distance heuristic gave the best result.
 
 ## Key Learnings
 <p> 1. Effect of different heuristic functions of A-star search on path cost and time </p>
-<p> 2. Using heapq library in Python to implement a "min-heap"</p>
+<p> 2. Using heapq library in Python to implement a min-heap</p>
 <p> 3. Image scaling using Nearest Neighbour Interpolation </p>
 <p> 4. OpenCV: opening, closing and saving images, drawing lines on images, extracting b, g, r channels </p>
 <p> 5. Numpy: creating n-dimensional arrays </p>
@@ -12,16 +12,11 @@ The task involves a total of six parts.
 ## Challenges and Workarounds
 ### 1. Converting given image to a "grid"
 The first challenge was to convert the given image to a 2D matrix (or grid), on which the search algorithm could be implemented.
-I was given the rgb values of the start and end colors, navigable path color and obstacle color. I could find an approach to overcome the challenge after a lot of web searching. 
-Using numpy library, I created a matrix of dimensions same as that of the image, with all its elements initialized to 0. Next, I looped through the image and compared the rgb (bgr in opencv) values of the pixels with those of start and end nodes in order to get their respective coordinates (<b>NOTE</b> : I was given a (100px * 100px) image in which 
-the start and end nodes were of 1 pixel size). In order to indicate the non-navigable path, I changed those matrix elements to 1, that had the rgb values matching those of the obstacle. 
-#### Another Challenge within this Challenge (😅)
-After several attempts at trying to make the code work, I realised I had made a fundamental mistake. A row and a column of an image actually represents the Mat[column][row]
-element of the 2D matrix
-
+Given the RGB values of the start and end colors, navigable path color and obstacle color, I could find an approach to overcome the challenge after a lot of web searching. 
+Using numpy library, I created a matrix of dimensions same as that of the image, with all its elements initialized to 0. Next, I looped through the image and compared the rgb (bgr in opencv) values of the pixels with those of start and end nodes in order to get their respective coordinates (<b>NOTE</b> : given a (100px * 100px) image in which the start and end nodes were of 1 pixel size). In order to indicate the non-navigable path, I changed those matrix elements to 1, that had the rgb values matching those of the obstacle. 
+#### Another Challenge within this Challenge
+After several attempts at trying to make the code work, I realised I had made a fundamental mistake. A row and a column of an image actually represents the Mat[column][row] element of the 2D matrix
 <img width="820" alt="E321BC66-7E69-4FE5-A567-244FFBE402DC" src="https://user-images.githubusercontent.com/77488107/117321408-b76d5080-aeaa-11eb-9c16-0bc7800a3ac7.png">
-
-
 
 ### 2. Class Node approach 
 In order to keep my code object oriented, a node class had to be created to keep the properties of nodes (or pixels) explored or visited. 
@@ -43,4 +38,4 @@ A better non-admissible heuristic could be selected to improve on highlighting t
 A more compact method of representing the image as a grid could be explored.
 
 ## Conclusion
-All in all, it was a fun task to do and gave me the opportunity to explore a variety of heuristics for the A star algorithm as well as for the different OpenCV features.
+This project gave me the opportunity to explore a variety of heuristics for the A* algorithm and different OpenCV functions.
